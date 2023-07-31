@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_balanceRegistryAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "TokenSold",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "balanceRegistry",
+				"outputs": [
+					{
+						"internalType": "contract BalanceRegistry",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "seller",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "buyTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "sellTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/6_Revente_Token.sol": "ContratReventeTokens"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/6_Revente_Token.sol": {
+			"keccak256": "0xe6852100a03d30a3b92554f2352567cf63da6ac640156939deed0fabfcb49df8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://e2088aec270a33f6fac1364e4274e1a6477dad4e7ee6cd44e5709f263e8ba126",
+				"dweb:/ipfs/QmYghGv7babyiienHnYmHxE8iGhoxcvEv4s1C6apTQYFJz"
+			]
+		},
+		"contracts/BalanceRegistry.sol": {
+			"keccak256": "0xdbc7d8f4088707ab2e0f3e9c828b6343c4efd01f9c163886f9f3c16ad0cc3add",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://dccb11045bfdb326e0d9b88957357b447acb463e26349c63d5e08d4d09378329",
+				"dweb:/ipfs/Qmba6tJrQnhiFw9NoASV2p4wVcunQYPgw3SRu8c5VmcTLj"
+			]
+		}
+	},
+	"version": 1
+}
