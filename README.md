@@ -1,19 +1,21 @@
 # shareimmo-dapp
 
-**npm install @openzeppelin/contracts**
+**openzeppelin**
 
-**mpn install -g truffle**
+    npm install @openzeppelin/contracts
 
-    -> installer truffle
+**installer truffle**
 
-**truffle init**
+    npm install -g truffle
 
-    -> initialiser un projet truffle
+**initialiser un projet truffle**
 
-**truffle compile**
+    truffle init
 
-    -> compiler les smart contracts
+**compiler les smart contracts**
 
-**truffle migrate --reset**
+    truffle compile
 
-    -> deployer les smart contracts sur la BXC (i.e. Ganache)
+**deployer les smart contracts sur la BXC (i.e. Ganache)**
+
+    truffle migrate --resets
